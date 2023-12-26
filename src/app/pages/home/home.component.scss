@@ -1,0 +1,86 @@
+.home-con {
+  .placeholder {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    img {
+      width: 100%;
+    }
+  }
+
+  .fan-svg {
+    position: absolute;
+    z-index: 3;
+    width: 570px;
+    top: 210px;
+    left: 47px;
+    transform: rotate(-5deg);
+
+    .k {
+      fill: #946c00;
+      stroke: #3f3900;
+    }
+
+    .k, .l {
+      stroke-width: 2px;
+    }
+
+    .k, .l, .line-highlight, .line-bg {
+      stroke-miterlimit: 10;
+    }
+
+    .l {
+      fill: #8f8366;
+      stroke: #000666;
+    }
+
+    .line-highlight {
+      fill: #f9f4e8;
+      stroke: rgba(121, 108, 71, 0.01);
+    }
+
+    .line-bg {
+      fill: #fcfcfa;
+      stroke: #6f6752;
+    }
+    .fan-svg-item {
+      cursor: pointer;
+      .line-text path {
+        fill: rgb(109, 109, 109);
+      }
+      &:hover {
+        .line-highlight {
+          fill: #f7e9c7;
+        }
+    
+        .line-bg {
+          fill: #fffbe8;
+        }
+        .line-text path {
+          fill: rgb(150, 58, 16);
+        }
+      }
+    }
+
+    .fan-svg-exit {
+
+    }
+    .fan-svg-help {
+
+    }
+    .fan-svg-card {
+
+    }
+    .fan-svg-continue {
+
+    }
+    .fan-svg-start {
+
+    }
+
+  }
+}
