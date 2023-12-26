@@ -2,8 +2,8 @@
 
 江湖贰续(JH2new)
 
-[中文](https://github.com/bobgame/jh2/README.md)
-[English](https://github.com/bobgame/jh2/README.en.md)
+[中文](https://github.com/bobgame/JH2/blob/main/README.md)
+[English](https://github.com/bobgame/JH2/blob/main/README_en.md)
 
 项目基于 Angular 实现.
 
