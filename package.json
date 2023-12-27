@@ -5,6 +5,7 @@
   "description": "Jiang Hu 2 development by BobGame",
   "scripts": {
     "build": "ng build",
+    "lint": "ng lint",
     "ng": "ng",
     "serve": "ng serve",
     "start": "ng serve",
@@ -26,8 +27,19 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.0.8",
+    "@angular-eslint/builder": "17.1.1",
+    "@angular-eslint/eslint-plugin": "17.1.1",
+    "@angular-eslint/eslint-plugin-template": "17.1.1",
+    "@angular-eslint/schematics": "17.1.1",
+    "@angular-eslint/template-parser": "17.1.1",
     "@angular/cli": "^17.0.8",
     "@angular/compiler-cli": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "6.16.0",
+    "@typescript-eslint/parser": "6.16.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jsdoc": "46.9.1",
+    "eslint-plugin-prefer-arrow": "1.2.3",
     "typescript": "~5.2.2"
   }
 }

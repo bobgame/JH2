@@ -7,80 +7,67 @@
     width: 100%;
     height: 100%;
     opacity: 0.1;
+
     img {
       width: 100%;
     }
   }
 
-  .fan-svg {
+  .home-bg {
     position: absolute;
-    z-index: 3;
-    width: 570px;
-    top: 210px;
-    left: 47px;
-    transform: rotate(-5deg);
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-    .k {
-      fill: #946c00;
-      stroke: #3f3900;
+  .desc-text {
+    position: absolute;
+    z-index: 2;
+    right: 12%;
+    top: 36%;
+    width: 0%;
+    height: 0%;
+    opacity: .8;
+    overflow: hidden;
+    &.show-text {
+      animation: showStrings 10s ease-in-out 0s 1 normal forwards;
     }
-
-    .k, .l {
-      stroke-width: 2px;
-    }
-
-    .k, .l, .line-highlight, .line-bg {
-      stroke-miterlimit: 10;
-    }
-
-    .l {
-      fill: #8f8366;
-      stroke: #000666;
-    }
-
-    .line-highlight {
-      fill: #f9f4e8;
-      stroke: rgba(121, 108, 71, 0.01);
-    }
-
-    .line-bg {
-      fill: #fcfcfa;
-      stroke: #6f6752;
-    }
-    .fan-svg-item {
-      cursor: pointer;
-      .line-text path {
-        fill: rgb(109, 109, 109);
-      }
-      &:hover {
-        .line-highlight {
-          fill: #f7e9c7;
-        }
     
-        .line-bg {
-          fill: #fffbe8;
-        }
-        .line-text path {
-          fill: rgb(150, 58, 16);
-        }
-      }
+    img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 224px;
     }
+  }
+}
 
-    .fan-svg-exit {
-
-    }
-    .fan-svg-help {
-
-    }
-    .fan-svg-card {
-
-    }
-    .fan-svg-continue {
-
-    }
-    .fan-svg-start {
-
-    }
-
+// 执行一个4列 一个个字符显示的动画
+@keyframes showStrings {
+  0% {
+    width: 0%;
+    height: 0%;
+  }
+  20% {
+    width: 15%;
+    height: 56%;
+  }
+  40% {
+    width: 30%;
+    height: 56%;
+  }
+  60% {
+    width: 45%;
+    height: 56%;
+  }
+  80% {
+    width: 60%;
+    height: 56%;
+  }
+  100% {
+    width: 75%;
+    height: 56%;
   }
 }

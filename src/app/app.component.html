@@ -1,6 +1,6 @@
 <div class="hole-container">
-  <div class="page-container">
-    <jh-home></jh-home>
+  <div class="page-container" *[ngSwitch]="g.show.page">
+    <jh-home *ngSwitchCase="PageEnum.Home"></jh-home>
   </div>
 </div>
 <router-outlet></router-outlet>
