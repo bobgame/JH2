@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core'
 import { HomeFanComponent } from './home-fan/home-fan.component'
 import { HomeBgComponent } from './home-bg/home-bg.component'
 import { CommonModule } from '@angular/common'
+import { GlobalService } from '../../services/global.service'
+import { PageEnum } from '../../constants/enums/base.enum'
 
 @Component({
   selector: 'jh-home',
@@ -11,6 +13,11 @@ import { CommonModule } from '@angular/common'
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
+  constructor(
+    public g: GlobalService,
+  ) { }
+
+  PageEnum = PageEnum
   showText = false
   showFan = false
   fanIn = false
@@ -48,4 +55,6 @@ export class HomeComponent implements OnInit {
     this.showFan = true
     this.fanIn = true
   }
+
+
 }
