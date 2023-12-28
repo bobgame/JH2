@@ -8,11 +8,12 @@ import { HelpComponent } from './pages/help/help.component'
 import { PlayGuideComponent } from './pages/play-guide/play-guide.component'
 import { GameComponent } from './pages/game/game.component'
 import { CardsComponent } from './pages/cards/cards.component'
+import { ChooseHeroComponent } from './pages/choose-hero/choose-hero.component'
 
 @Component({
   selector: 'jh-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HomeComponent, HelpComponent, PlayGuideComponent, GameComponent, CardsComponent],
+  imports: [CommonModule, RouterOutlet, HomeComponent, HelpComponent, PlayGuideComponent, GameComponent, CardsComponent, ChooseHeroComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

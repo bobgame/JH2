@@ -1,10 +1,16 @@
 <div class="hole-container">
-  <div class="page-container" [ngSwitch]="g.show.page">
-    <jh-home *ngSwitchCase="PageEnum.Home"></jh-home>
-    <jh-play-guide *ngSwitchCase="PageEnum.PlayGuide"></jh-play-guide>
-    <jh-game *ngSwitchCase="PageEnum.Game"></jh-game>
-    <jh-cards *ngSwitchCase="PageEnum.Cards"></jh-cards>
-    <jh-help *ngSwitchCase="PageEnum.Help"></jh-help>
+  <div class="page-container">
+    <div class="pages-bg">
+      <img class="desc-text-img" src="/assets/images/bg-frame.png" alt="" srcset="">
+    </div>
+    <div class="pages" [ngSwitch]="g.show.page">
+      <jh-home *ngSwitchCase="PageEnum.Home"></jh-home>
+      <jh-choose-hero *ngSwitchCase="PageEnum.ChooseHero"></jh-choose-hero>
+      <jh-play-guide *ngSwitchCase="PageEnum.PlayGuide"></jh-play-guide>
+      <jh-game *ngSwitchCase="PageEnum.Game"></jh-game>
+      <jh-cards *ngSwitchCase="PageEnum.Cards"></jh-cards>
+      <jh-help *ngSwitchCase="PageEnum.Help"></jh-help>
+    </div>
   </div>
 </div>
 <router-outlet></router-outlet>
