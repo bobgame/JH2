@@ -7,7 +7,7 @@ import { PageEnum } from '../constants/enums/base.enum'
 export class GlobalService {
 
   show = {
-    page: PageEnum.ChooseHero,
+    page: PageEnum.Home,
   }
 
   constructor() { }

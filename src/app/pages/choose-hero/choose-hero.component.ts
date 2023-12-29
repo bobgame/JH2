@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
 import { clone } from '../../units/Base'
 import { AnswerItem, qa } from './choose-q-a'
+import { GlobalService } from '../../services/global.service'
+import { PageEnum } from '../../constants/enums/base.enum'
 
 @Component({
   selector: 'jh-choose-hero',
@@ -11,7 +13,11 @@ import { AnswerItem, qa } from './choose-q-a'
   styleUrl: './choose-hero.component.scss',
 })
 export class ChooseHeroComponent {
-  showPreChoose = true
+  constructor(
+    private g: GlobalService,
+  ) { }
+
+  showPreChoose = false
 
   qa = clone(qa)
 
@@ -49,6 +55,7 @@ export class ChooseHeroComponent {
     this.currentQa.item = this.qa[this.currentQa.index]
     if (this.currentQa.item === undefined) {
       console.log('No more question')
+      this.g.goToPage(PageEnum.PlayGuide)
     }
   }
 
