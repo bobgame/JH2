@@ -4,7 +4,7 @@
   "private": true,
   "description": "Jiang Hu 2 development by BobGame",
   "scripts": {
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "lint": "ng lint",
     "ng": "ng",
     "serve": "ng serve",
