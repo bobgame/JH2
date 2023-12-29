@@ -1,6 +1,6 @@
 {
   "name": "jh2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "Jiang Hu 2 development by BobGame",
   "scripts": {
@@ -8,6 +8,7 @@
     "lint": "ng lint",
     "ng": "ng",
     "serve": "ng serve",
+    "standard-version": "standard-version",
     "start": "ng serve",
     "test": "ng test",
     "watch": "ng build --watch --configuration development"
@@ -40,6 +41,7 @@
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-jsdoc": "46.9.1",
     "eslint-plugin-prefer-arrow": "1.2.3",
+    "standard-version": "^9.5.0",
     "typescript": "~5.2.2"
   }
 }
